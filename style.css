@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(31, 42, 52);
+    display:block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    background-color: rgb(61, 102, 12);
+    width: 20%;
+    height: 50px;
+    font-size: large;
+}
+div{
+    background-color: aqua;
+    box-shadow: 2px solid darkblue;
+
+}
+
+.f{
+    width: 100%;
+    background-color:rgb(31, 42, 52) ;
+}
