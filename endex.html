@@ -1,25 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EL mahale</title>
-  <link rel="stylesheet" href="style.css">
+<!-- saved from url=(0026)http://192.168.0.176:8000/ -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>أوامر Termux للتعامل مع الملفات</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      line-height: 1.8;
+    }
+    h1, h2 {
+      color: #007b7f;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: right;
+    }
+    th {
+      background-color: #eee;
+    }
+    code {
+      background-color: #e0e0e0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      direction: ltr;
+    }
+  </style>
 </head>
 <body>
 
+  <h1>أوامر Termux للتعامل مع الملفات</h1>
 
-<div class="f">
-  <button>help</button>  
-  <button>git hub</button>  
-  <button>yuotube</button>  
-  <button>facebook</button> 
-</div> 
-<div>
-  <h1>hello</h1>
-</div>
+  <h2>🟢 أولًا: إنشاء ملف أو مجلد</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>إنشاء ملف فارغ</td><td><code>touch filename.txt</code></td></tr>
+    <tr><td>إنشاء مجلد</td><td><code>mkdir foldername</code></td></tr>
+  </tbody></table>
+
+  <h2>🟡 ثانيًا: عرض الملفات وتصفح المجلدات</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>عرض الملفات</td><td><code>ls</code> أو <code>ls -la</code></td></tr>
+    <tr><td>الدخول إلى مجلد</td><td><code>cd foldername</code></td></tr>
+    <tr><td>الرجوع لمجلد سابق</td><td><code>cd ..</code></td></tr>
+    <tr><td>الرجوع للمجلد الرئيسي</td><td><code>cd ~</code></td></tr>
+  </tbody></table>
+
+  <h2>🔵 ثالثًا: نقل الملفات أو إعادة تسميتها</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>نقل ملف</td><td><code>mv source target</code></td></tr>
+    <tr><td>إعادة تسمية ملف</td><td><code>mv oldname.txt newname.txt</code></td></tr>
+  </tbody></table>
+
+  <h2>🔴 رابعًا: نسخ الملفات أو المجلدات</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>نسخ ملف</td><td><code>cp file.txt new_location/</code></td></tr>
+    <tr><td>نسخ مجلد</td><td><code>cp -r folder1 folder2</code></td></tr>
+  </tbody></table>
+
+  <h2>⚫ خامسًا: حذف الملفات أو المجلدات</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>حذف ملف</td><td><code>rm filename.txt</code></td></tr>
+    <tr><td>حذف مجلد فارغ</td><td><code>rmdir foldername</code></td></tr>
+    <tr><td>حذف مجلد بمحتوياته</td><td><code>rm -r foldername</code></td></tr>
+  </tbody></table>
+
+  <h2>🟣 سادسًا: قراءة أو تحرير الملفات</h2>
+  <table>
+    <tbody><tr><th>الهدف</th><th>الأمر</th></tr>
+    <tr><td>عرض محتوى ملف</td><td><code>cat filename.txt</code></td></tr>
+    <tr><td>تحرير ملف</td><td><code>nano filename.txt</code></td></tr>
+    <tr><td>تثبيت محرر nano (إذا لزم الأمر)</td><td><code>pkg install nano</code></td></tr>
+  </tbody></table>
+
+  <h2>📁 مسارات مهمة في Termux</h2>
+  <table>
+    <tbody><tr><th>المسار</th><th>معناه</th></tr>
+    <tr><td><code>~</code></td><td>مجلد المستخدم</td></tr>
+    <tr><td><code>/data/data/com.termux/</code></td><td>المسار الداخلي لتطبيق Termux</td></tr>
+    <tr><td><code>~/storage/</code></td><td>ربط مجلدات التخزين بعد تفعيلها</td></tr>
+  </tbody></table>
+
+  <p>لتفعيل التخزين وربط مجلدات Android قم بالأمر التالي مرة واحدة:</p>
+  <code>termux-setup-storage</code>
 
 
 
-</body>
-</html>
+</body></html>
